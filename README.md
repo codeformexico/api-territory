@@ -9,7 +9,7 @@ The United Mexican States (Spanish: Estados Unidos Mexicanos) is a federal repub
 
 Add this line to your application's Gemfile:
 
-    gem 'api-territory'
+    gem 'api_territory'
 
 And then execute:
 
@@ -17,7 +17,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install api-territory
+    $ gem install api_territory
 
 ## Usage
 

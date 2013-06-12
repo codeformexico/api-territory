@@ -9,3 +9,5 @@ module Mexico
   	end
 	end
 end	
+
+require "api/territory/engine"

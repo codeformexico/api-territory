@@ -16,4 +16,4 @@
 # Using secret_token for rails3 compatibility. Change to secret_key_base
 # to avoid deprecation warning.
 # Can be safely removed in a rails3 api-only application.
-Dummy::Application.config.secret_token = 'b544b665266a650b5a447176a1ed4ed65eeaa5a5708b2e0982e270eb9f43ef83ed35dafca7488afad0dccfdd4d451180c1093e729a064a83af816b87102537a7'
+Dummy::Application.config.secret_token = '7f2d55aad14f51b1ae8328ef942717f6286d3d2baf49e092fe553febe36b7bf233bf7e18ebf69ca3088732a2cfdb288d721f9866709cdce21085da00f5f34100'

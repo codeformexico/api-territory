@@ -1,4 +1,7 @@
-source 'https://rubygems.org'
+source "http://rubygems.org"
 
-# Specify your gem's dependencies in api-territory.gemspec
+# Declare your gem's dependencies in api_territory.gemspec.
 gemspec
+
+# jquery-rails is used by the dummy application
+gem "jquery-rails"

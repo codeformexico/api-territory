@@ -23,9 +23,15 @@ end
 APP_RAKEFILE = File.expand_path("../spec/dummy/Rakefile", __FILE__)
 load 'rails/tasks/engine.rake'
 
-
-
 Bundler::GemHelper.install_tasks
 
-require 'rspec/core/rake_task'
-RSpec::Core::RakeTask.new(:default)
+begin
+  require "rspec/core/rake_task"
+
+  desc "Run all examples"
+    RSpec::Core::RakeTask.new(:spec) do |t|
+      t.rspec_opts = %w[--color]
+      t.pattern = 'spec/*_spec.rb'
+    end
+    rescue LoadError
+end

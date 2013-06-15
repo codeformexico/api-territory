@@ -1,0 +1,29 @@
+## Customize the test machine
+machine:
+
+  # Version of ruby to use
+  ruby:
+    version:
+      1.9.3-p429
+
+  # Add some environmental variables
+  environment:
+    CIRCLE_ENV: test
+    DATABASE_URL: postgres://ubuntu:@127.0.0.1:5432/circle_test
+
+
+## Customize dependencies
+dependencies:
+  override:
+    - bundle install: # note ':' here
+        timeout: 180 # fail if command has no output for 3 minutes
+
+## Customize test commands
+test:
+  post:
+    - bundle exec rspec spec
+        environment:
+          RAILS_ENV: test
+          RACK_ENV: test
+    - git checkout master
+    - git merge staging

@@ -2,7 +2,6 @@ language: ruby
 rvm: 1.9.3
 script: 
   - bundle exec rspec spec
-  - git fetch
-  - git checkout master
+  - git clone --depth=1 --branch=master git://github.com/codeformexico/api_territory.git 
   - git merge staging
 

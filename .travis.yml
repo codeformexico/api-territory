@@ -4,4 +4,5 @@ script:
   - bundle exec rspec spec
   - git clone --depth=1 --branch=master git://github.com/codeformexico/api_territory.git 
   - git merge staging
+  - git push
 

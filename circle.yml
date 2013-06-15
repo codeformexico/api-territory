@@ -20,10 +20,7 @@ dependencies:
 
 ## Customize test commands
 test:
-  post:
+  override:
     - bundle exec rspec spec
-        environment:
-          RAILS_ENV: test
-          RACK_ENV: test
     - git checkout master
     - git merge staging

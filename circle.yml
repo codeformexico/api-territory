@@ -24,8 +24,8 @@ test:
     - bundle exec rspec spec
 
 development:
-  staging:
-    branch: staging
+  automerge:
+    branch: [staging]
     commands:
       - git remote add master git@github.com:codeformexico/api_territory.git
       - git fetch master

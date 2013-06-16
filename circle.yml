@@ -23,6 +23,7 @@ test:
   override:
     - bundle exec rspec spec
 
+## Customize deployment commands
 development:
   automerge:
     branch: [staging]

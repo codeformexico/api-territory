@@ -23,7 +23,7 @@ test:
   override:
     - bundle exec rspec spec
     - git remote add master git@github.com:codeformexico/api_territory.git
-    - git fetch master
+    - git fetch -a
     - git checkout master
     - git merge staging
     - git push

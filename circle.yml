@@ -25,7 +25,9 @@ test:
 
 ## Customize deployment commands
 deployment:
-  commands:
+  staging:
+    branch: staging
+    commands:
     - git fetch -a
     - git checkout staging
     - git push origin staging:master

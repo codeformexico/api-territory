@@ -24,4 +24,4 @@ test:
     - bundle exec rspec spec
     - git fetch -a
     - git checkout master
-    - git push origin staging:master
+    - git push origin master:staging

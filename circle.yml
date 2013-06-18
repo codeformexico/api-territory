@@ -22,7 +22,4 @@ dependencies:
 test:
   override:
     - bundle exec rspec spec
-    - git remote add master git@github.com:codeformexico/api_territory.git
-    - git fetch -a
-    - git checkout master
-    - git push origin master:staging
+    - git push origin staging:master

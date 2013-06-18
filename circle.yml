@@ -24,10 +24,8 @@ test:
     - bundle exec rspec spec
 
 ## Customize deployment commands
-development:
-  automerge:
-    branch: [staging]
-    commands:
-      - git fetch -a
-      - git checkout staging
-      - git push origin staging:master
+deployment:
+  commands:
+    - git fetch -a
+    - git checkout staging
+    - git push origin staging:master
